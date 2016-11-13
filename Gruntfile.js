@@ -17,7 +17,7 @@ module.exports = function(grunt) {
         dynamic: {
             files: [{
                 expand: true,
-                cwd: 'images/',
+                cwd: 'images_orig/',
                 src: ['**/*.{png, jpg,jpeg, gif}'],
                 dest: 'new-images/'
             }]
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
             },
         }
     },
-    
+
     browserSync: {
         files: {
           src : [
