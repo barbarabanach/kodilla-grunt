@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             files: [{
                 expand: true,
                 cwd: 'images_orig/',
-                src: ['**/*.{png, jpg,jpeg, gif}'],
+                src: ['**/*.{png,jpg,jpeg,gif}'],
                 dest: 'new-images/'
             }]
         }
@@ -39,9 +39,9 @@ module.exports = function(grunt) {
     browserSync: {
         files: {
           src : [
-              'assets/css/*.css',
-              'assets/img/*',
-              'assets/js/*.js',
+              'css/*.css',
+              'new-images/*',
+              '**/*.js',
               '**/*.html'
            ],
         },
